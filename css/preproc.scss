@@ -1,0 +1,105 @@
+// Splice 
+// Landing Page Layout
+// HTML&CSS by Bezrodnyi Alex
+
+// @import url(../fonts/testsohnebreit-buch-webfont.woff);
+// @import url(../fonts/testsohnebreit-buch-webfont.woff2);
+// @import url(../fonts/testsohnebreit-dreiviertelfett-webfont.woff);
+// @import url(../fonts/testsohnebreit-dreiviertelfett-webfont.woff2);
+// @import url(../fonts/testsohnebreit-fett-webfont.woff);
+// @import url(../fonts/testsohnebreit-fett-webfont.woff2);
+// @import url(../fonts/testsohnebreit-halbfett-webfont.woff);
+// @import url(../fonts/testsohnebreit-halbfett-webfont.woff2);
+// @import url(../fonts/testsohnebreit-kraftig-webfont.woff);
+// @import url(../fonts/testsohnebreit-kraftig-webfont.woff2);
+@font-face {
+    font-family: 'Sohne Breit Buch';
+    src: url('../fonts/testsohnebreit-buch-webfont.woff'), url('../fonts/testsohnebreit-buch-webfont.woff2');
+}
+@font-face {
+    font-family: 'Sohne Breit Kraftig';
+    src: url('../fonts/testsohnebreit-kraftig-webfont.woff'), url('../fonts/testsohnebreit-kraftig-webfont.woff2');
+}
+
+// Variables
+$link_color_hover: #f0704e;
+
+body {
+    font-family: 'Sohne Breit Buch';
+}
+header {
+    position: relative;
+    padding: 40px 80px 0px;
+    &::before {
+        content: url(../img/png/Header_Bg_grey.png);
+        display: block;
+        z-index: -2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        // width: 100vw;
+    }
+    &::after {
+        content: url(../img/png/Header_Bg_photo.png);
+        display: block;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;  
+    }
+    .header_menu {
+        // display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .cover {
+            gap: 515px;
+            nav {
+            // display: flex;
+            justify-content: space-between;
+            .nav_central_menu {
+                // display: flex;
+                max-width: 1088px;
+                gap: 515px;
+                ul {
+                    // display: flex;
+                    gap: 32px;
+                    li {
+                        border-bottom: 2px solid transparent;
+                        a {
+                            text-transform: uppercase;
+                            font-family: 'Sohne Breit Kraftig';
+                            font-weight: 400;
+                            font-size: 10px;
+                            color: #272727;
+                        }
+                        &:hover {
+                            border-bottom: 2px solid $link_color_hover;
+                        }
+                    }
+                }
+            }
+        }
+        }
+        
+        .header_menu, .cover, nav, .nav_central_menu, .nav_central_menu ul {
+            display: flex;
+        }
+        .nav_right_menu {
+            display: flex;
+            a {
+                span {
+                    text-transform: uppercase;
+                    padding: 10px 31px;
+                    font-family: 'Sohne Breit Buch';
+                    font-weight: 400;
+                    font-size: 10px;
+                    color: #fff;
+                    &:hover {
+                        background-color: #ffffff26;
+                        border-radius: 105px;
+                    }
+                }
+            }
+        }
+    }
+}

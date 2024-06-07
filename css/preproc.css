@@ -6,75 +6,126 @@
   font-family: "Sohne Breit Kraftig";
   src: url("../fonts/testsohnebreit-kraftig-webfont.woff"), url("../fonts/testsohnebreit-kraftig-webfont.woff2");
 }
+@font-face {
+  font-family: "Sohne Breit Halbfett";
+  src: url("../fonts/testsohnebreit-halbfett-webfont.woff"), url("../fonts/testsohnebreit-halbfett-webfont.woff2");
+}
 body {
   font-family: "Sohne Breit Buch";
 }
 
 header {
-  position: relative;
+  background-image: url("../img/png/Header_Bg_Youth.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+header .wrapper {
   padding: 40px 80px 0px;
 }
-header::before {
-  content: url(../img/png/Header_Bg_grey.png);
-  display: block;
-  z-index: -2;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-header::after {
-  content: url(../img/png/Header_Bg_photo.png);
-  display: block;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-header .header_menu {
-  justify-content: space-between;
+header .wrapper div {
+  display: flex;
   align-items: center;
-}
-header .header_menu .cover {
-  gap: 515px;
-}
-header .header_menu .cover nav {
   justify-content: space-between;
 }
-header .header_menu .cover nav .nav_central_menu {
+header .wrapper div .cover {
   max-width: 1088px;
-  gap: 515px;
+  gap: 400px;
 }
-header .header_menu .cover nav .nav_central_menu ul {
+header .wrapper div .cover nav {
+  padding-left: 80px;
+}
+header .wrapper div .cover nav .nav_central_menu ul {
+  display: flex;
   gap: 32px;
 }
-header .header_menu .cover nav .nav_central_menu ul li {
+header .wrapper div .cover nav .nav_central_menu ul li {
   border-bottom: 2px solid transparent;
 }
-header .header_menu .cover nav .nav_central_menu ul li a {
+header .wrapper div .cover nav .nav_central_menu ul li a {
   text-transform: uppercase;
   font-family: "Sohne Breit Kraftig";
   font-weight: 400;
   font-size: 10px;
   color: #272727;
 }
-header .header_menu .cover nav .nav_central_menu ul li:hover {
+header .wrapper div .cover nav .nav_central_menu ul li:hover {
   border-bottom: 2px solid #f0704e;
 }
-header .header_menu .header_menu, header .header_menu .cover, header .header_menu nav, header .header_menu .nav_central_menu, header .header_menu .nav_central_menu ul {
+header .wrapper div .cover .nav_right_menu {
   display: flex;
 }
-header .header_menu .nav_right_menu {
-  display: flex;
-}
-header .header_menu .nav_right_menu a span {
+header .wrapper div .cover .nav_right_menu a span {
   text-transform: uppercase;
   padding: 10px 31px;
   font-family: "Sohne Breit Buch";
   font-weight: 400;
   font-size: 10px;
   color: #fff;
+  transition: ease 1s;
 }
-header .header_menu .nav_right_menu a span:hover {
+header .wrapper div .cover .nav_right_menu a span:hover {
   background-color: rgba(255, 255, 255, 0.1490196078);
   border-radius: 105px;
+  transition: ease 1s;
+}
+header .wrapper div.offer {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  align-items: flex-start;
+}
+header .wrapper div.offer h1 {
+  font-size: 72px;
+  font-weight: 800;
+  font-family: "Sohne Breit Buch";
+  background: url("../img/png/Header_Text_Bg_Img.png") no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  max-width: 484px;
+  padding-top: 120px;
+  margin-bottom: 24px;
+}
+header .wrapper div.offer p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 171%;
+  color: #595959;
+  margin-bottom: 34px;
+}
+header .wrapper div.offer a {
+  margin-bottom: 228px;
+}
+header .wrapper div.offer span {
+  font-family: "Sohne Breit Kraftig";
+  font-size: 12px;
+  border-radius: 105px;
+  padding: 11px 35px;
+  background: #03f;
+  color: #fff;
+  text-transform: uppercase;
+  transition: ease 1.5s;
+}
+header .wrapper div.offer span:hover {
+  background: #f0704e;
+  color: #272727;
+  transition: ease 1.5s;
+}
+
+.featured_in .wrapper {
+  padding: 40px 80px 0px;
+}
+.featured_in .wrapper .feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.featured_in .wrapper .feature h3 {
+  text-transform: uppercase;
+  font-family: "Sohne Breit Halbfett";
+  font-weight: 400;
+  font-size: 13px;
+  color: #606060;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=preproc.css.map */

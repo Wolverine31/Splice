@@ -233,31 +233,48 @@ header .wrapper div.offer span:hover {
   background: #606060;
   max-width: 502px;
 }
-.build_ds .wrapper article .offer {
+.build_ds .wrapper article .ds_offer {
   display: flex;
   flex-direction: column;
   max-width: 423px;
 }
-.build_ds .wrapper article .offer h2, .build_ds .wrapper article .offer h3 {
+.build_ds .wrapper article .ds_offer h2, .build_ds .wrapper article .ds_offer h3 {
   font-family: "Sohne Breit Fett";
   font-weight: 400;
 }
-.build_ds .wrapper article .offer h2 {
+.build_ds .wrapper article .ds_offer h2 {
   font-size: 48px;
   color: #272727;
   line-height: 108%;
   margin-bottom: 18px;
 }
-.build_ds .wrapper article .offer h2 span {
+.build_ds .wrapper article .ds_offer h2 span {
   color: #03f;
 }
-.build_ds .wrapper article .offer h3 {
+.build_ds .wrapper article .ds_offer h3 {
   font-size: 16px;
   color: rgba(96, 96, 96, 0.3137254902);
 }
-.build_ds .wrapper article .offer p {
+.build_ds .wrapper article .ds_offer p {
   font-weight: 400;
   font-size: 18px;
   line-height: 171%;
   color: #958a8a;
+  margin-bottom: 34px;
+}
+.build_ds .wrapper article .ds_offer a span {
+  font-family: "Sohne Breit Kraftig";
+  font-size: 12px;
+  border-radius: 105px;
+  background: #03f;
+  padding: 11px 35px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: ease 1.5s;
+  margin-bottom: 50px;
+}
+.build_ds .wrapper article .ds_offer a span:hover {
+  color: #272727;
+  background: #f0704e;
+  transition: ease 1.5s;
 }/*# sourceMappingURL=preproc.css.map */

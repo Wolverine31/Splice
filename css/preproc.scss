@@ -268,7 +268,7 @@ header {
                 background: #606060;
                 max-width: 502px;
             }
-            .offer {
+            .ds_offer {
                 display: flex;
                 flex-direction: column;
                 max-width: 423px;
@@ -294,6 +294,25 @@ header {
                     font-size: 18px;
                     line-height: 171%;
                     color: #958a8a;
+                    margin-bottom: 34px;
+                }
+                a {
+                    span {
+                        font-family: $btn_font;
+                        font-size: $btn_fz;
+                        border-radius: $btn_border_r;
+                        background: $btn_bg;
+                        padding: $btn_padding;
+                        color: $btn_color;
+                        text-transform: uppercase;
+                        transition: ease 1.5s;
+                        margin-bottom: 50px;
+                        &:hover {
+                            color: #272727;
+                            background: $link_color_hover;
+                            transition: ease 1.5s;
+                        }
+                    }
                 }
             }
         }

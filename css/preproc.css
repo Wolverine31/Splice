@@ -10,6 +10,10 @@
   font-family: "Sohne Breit Halbfett";
   src: url("../fonts/testsohnebreit-halbfett-webfont.woff"), url("../fonts/testsohnebreit-halbfett-webfont.woff2");
 }
+@font-face {
+  font-family: "Sohne Breit Fett";
+  src: url(../fonts/testsohnebreit-fett-webfont.woff), url(../fonts/testsohnebreit-fett-webfont.woff2);
+}
 body {
   font-family: "Sohne Breit Buch";
 }
@@ -120,6 +124,7 @@ header .wrapper div.offer span:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 127px;
 }
 .featured_in .wrapper .feature h3 {
   text-transform: uppercase;
@@ -128,4 +133,131 @@ header .wrapper div.offer span:hover {
   font-size: 13px;
   color: #606060;
   margin-bottom: 30px;
+}
+.featured_in .wrapper .feature article {
+  max-width: 1052px;
+  display: flex;
+  align-items: center;
+  gap: 79px;
+}
+.featured_in .wrapper .feature article div {
+  max-width: 147px;
+}
+
+.sound {
+  position: relative;
+}
+.sound .wrapper {
+  padding: 40px 80px 0px;
+}
+.sound .wrapper .sounds {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.sound .wrapper .sounds h2, .sound .wrapper .sounds h3 {
+  font-family: "Sohne Breit Fett";
+  font-weight: 400;
+}
+.sound .wrapper .sounds h2 {
+  font-size: 48px;
+  line-height: 108%;
+  color: #272727;
+  margin-bottom: 18px;
+}
+.sound .wrapper .sounds h2 span {
+  color: #03f;
+}
+.sound .wrapper .sounds h3 {
+  font-size: 16px;
+  color: rgba(96, 96, 96, 0.5);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.sound .wrapper .sounds p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 171%;
+  text-align: center;
+  color: #958a8a;
+  max-width: 558px;
+  display: inline-block;
+  margin-bottom: 34px;
+}
+.sound .wrapper .sounds a span {
+  font-family: "Sohne Breit Kraftig";
+  font-size: 12px;
+  border-radius: 105px;
+  background: #03f;
+  padding: 11px 35px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: ease 1.5s;
+  margin-bottom: 50px;
+}
+.sound .wrapper .sounds a span:hover {
+  background: #f0704e;
+  color: #272727;
+  transition: ease 1.5s;
+}
+.sound .wrapper .sounds img {
+  padding-top: 61px;
+}
+.sound .wrapper .sounds svg {
+  position: absolute;
+  width: 100%;
+  z-index: -3;
+  top: 332px;
+}
+
+.build_ds {
+  background-image: url(../img/png/Build_ds_bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 1004px;
+  position: relative;
+  top: -240px;
+  z-index: -4;
+}
+.build_ds .wrapper {
+  padding: 40px 80px 0px;
+}
+.build_ds .wrapper article {
+  position: absolute;
+  top: 322px;
+  display: flex;
+  max-width: 1156px;
+  gap: 231px;
+}
+.build_ds .wrapper article .logos {
+  background: #606060;
+  max-width: 502px;
+}
+.build_ds .wrapper article .offer {
+  display: flex;
+  flex-direction: column;
+  max-width: 423px;
+}
+.build_ds .wrapper article .offer h2, .build_ds .wrapper article .offer h3 {
+  font-family: "Sohne Breit Fett";
+  font-weight: 400;
+}
+.build_ds .wrapper article .offer h2 {
+  font-size: 48px;
+  color: #272727;
+  line-height: 108%;
+  margin-bottom: 18px;
+}
+.build_ds .wrapper article .offer h2 span {
+  color: #03f;
+}
+.build_ds .wrapper article .offer h3 {
+  font-size: 16px;
+  color: rgba(96, 96, 96, 0.3137254902);
+}
+.build_ds .wrapper article .offer p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 171%;
+  color: #958a8a;
 }/*# sourceMappingURL=preproc.css.map */
